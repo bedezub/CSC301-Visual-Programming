@@ -1,0 +1,12 @@
+C:\Users\zubquzaini\source\repos\Radio Button and Check Box\Radio Button and Check Box\bin\Debug\Radio Button and Check Box.exe.config
+C:\Users\zubquzaini\source\repos\Radio Button and Check Box\Radio Button and Check Box\bin\Debug\Radio Button and Check Box.exe
+C:\Users\zubquzaini\source\repos\Radio Button and Check Box\Radio Button and Check Box\bin\Debug\Radio Button and Check Box.pdb
+C:\Users\zubquzaini\source\repos\Radio Button and Check Box\Radio Button and Check Box\bin\Debug\Radio Button and Check Box.xml
+C:\Users\zubquzaini\source\repos\Radio Button and Check Box\Radio Button and Check Box\obj\Debug\Radio Button and Check Box.vbprojAssemblyReference.cache
+C:\Users\zubquzaini\source\repos\Radio Button and Check Box\Radio Button and Check Box\obj\Debug\Radio_Button_and_Check_Box.Form1.resources
+C:\Users\zubquzaini\source\repos\Radio Button and Check Box\Radio Button and Check Box\obj\Debug\Radio_Button_and_Check_Box.Resources.resources
+C:\Users\zubquzaini\source\repos\Radio Button and Check Box\Radio Button and Check Box\obj\Debug\Radio Button and Check Box.vbproj.GenerateResource.cache
+C:\Users\zubquzaini\source\repos\Radio Button and Check Box\Radio Button and Check Box\obj\Debug\Radio Button and Check Box.vbproj.CoreCompileInputs.cache
+C:\Users\zubquzaini\source\repos\Radio Button and Check Box\Radio Button and Check Box\obj\Debug\Radio Button and Check Box.exe
+C:\Users\zubquzaini\source\repos\Radio Button and Check Box\Radio Button and Check Box\obj\Debug\Radio Button and Check Box.xml
+C:\Users\zubquzaini\source\repos\Radio Button and Check Box\Radio Button and Check Box\obj\Debug\Radio Button and Check Box.pdb
