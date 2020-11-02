@@ -29,23 +29,28 @@ Public Class Form1
             prodPrice:=Double.Parse(prod_price.Text),
             prodPercent:=Long.Parse(prod_percent.Text)
             )
-
-        If count = 1 Then
-            prodTwo_name.Text = product(1).getName
-            prodTwo_price.Text = product(1).getPrice
-            prodTwo_percent.Text = product(1).getPercent
-            prodTwo_priceAD.Text = product(1).calcDiscount
-        ElseIf count = 2 Then
-            prodThree_name.Text = product(2).getName
-            prodThree_price.Text = product(2).getPrice
-            prodThree_percent.Text = product(2).getPercent
-            prodThree_priceAD.Text = product(2).calcDiscount
+        If Double.Parse(prod_percent.Text) > 0 Then
+            If count = 1 Then
+                prodTwo_name.Text = product(1).getName
+                prodTwo_price.Text = product(1).getPrice
+                prodTwo_percent.Text = product(1).getPercent
+                prodTwo_priceAD.Text = product(1).calcDiscount
+            ElseIf count = 2 Then
+                prodThree_name.Text = product(2).getName
+                prodThree_price.Text = product(2).getPrice
+                prodThree_percent.Text = product(2).getPercent
+                prodThree_priceAD.Text = product(2).calcDiscount
+            Else
+                prodOne_name.Text = product(0).getName
+                prodOne_price.Text = product(0).getPrice
+                prodOne_percent.Text = product(0).getPercent
+                prodOne_priceAD.Text = product(0).calcDiscount
+            End If
         Else
-            prodOne_name.Text = product(0).getName
-            prodOne_price.Text = product(0).getPrice
-            prodOne_percent.Text = product(0).getPercent
-            prodOne_priceAD.Text = product(0).calcDiscount
+            MessageBox.Show("Please enter valid percentage", "Percentage Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
+
 
         prod_name.Text = ""
         prod_price.Text = ""
@@ -75,15 +80,15 @@ Public Class Form1
         addProduct.Visible = False
         viewProduct.Visible = False
     End Sub
-    Private Sub prod_name_TextChanged(sender As Object, e As EventArgs) Handles prod_name.TextChanged
+    Private Sub prod_name_GotFocus(sender As Object, e As EventArgs) Handles prod_name.GotFocus, prod_price.GotFocus, prod_percent.GotFocus
+        sender.BackColor = Color.Gray
+    End Sub
 
+    Private Sub prod_name_LostFocus(sender As Object, e As EventArgs) Handles prod_name.LostFocus, prod_price.LostFocus, prod_percent.LostFocus
+        sender.BackColor = Color.White
     End Sub
 
     Private Sub prod_price_TextChanged(sender As Object, e As EventArgs) Handles prod_price.TextChanged
-
-    End Sub
-
-    Private Sub prod_percent_TextChanged(sender As Object, e As EventArgs) Handles prod_percent.TextChanged
 
     End Sub
 
