@@ -10,3 +10,15 @@ C:\Users\zubquzaini\source\repos\Assessment 1\Assessment 1\obj\Debug\Assessment 
 C:\Users\zubquzaini\source\repos\Assessment 1\Assessment 1\obj\Debug\Assessment 1.exe
 C:\Users\zubquzaini\source\repos\Assessment 1\Assessment 1\obj\Debug\Assessment 1.xml
 C:\Users\zubquzaini\source\repos\Assessment 1\Assessment 1\obj\Debug\Assessment 1.pdb
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Assessment 1\Assessment 1\bin\Debug\Assessment 1.exe.config
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Assessment 1\Assessment 1\bin\Debug\Assessment 1.exe
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Assessment 1\Assessment 1\bin\Debug\Assessment 1.pdb
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Assessment 1\Assessment 1\bin\Debug\Assessment 1.xml
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Assessment 1\Assessment 1\obj\Debug\Assessment 1.vbprojAssemblyReference.cache
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Assessment 1\Assessment 1\obj\Debug\Assessment_1.Form1.resources
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Assessment 1\Assessment 1\obj\Debug\Assessment_1.Resources.resources
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Assessment 1\Assessment 1\obj\Debug\Assessment 1.vbproj.GenerateResource.cache
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Assessment 1\Assessment 1\obj\Debug\Assessment 1.vbproj.CoreCompileInputs.cache
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Assessment 1\Assessment 1\obj\Debug\Assessment 1.exe
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Assessment 1\Assessment 1\obj\Debug\Assessment 1.xml
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Assessment 1\Assessment 1\obj\Debug\Assessment 1.pdb

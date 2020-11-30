@@ -1,4 +1,4 @@
-﻿Imports System.Runtime.CompilerServices
+﻿'written by bedezub
 
 Public Class Form1
 
@@ -7,44 +7,37 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
-
-    Private Sub FlowLayoutPanel1_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-    Private Sub addProduct_Paint(sender As Object, e As PaintEventArgs) Handles addProduct.Paint
+        txt_prodName.Text = "Product Name"
+        txt_prodPrice.Text = "Product Price"
+        txt_prodPercent.Text = "Discount Percent"
 
     End Sub
-    Private Sub viewProduct_Paint(sender As Object, e As PaintEventArgs) Handles viewProduct.Paint
-
-    End Sub
-
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btn_goSubmit.Click
         product(0) = New Products
         product(1) = New Products
         product(2) = New Products
 
         product(count).setData(
-            prodName:=String.Format(prod_name.Text),
-            prodPrice:=Double.Parse(prod_price.Text),
-            prodPercent:=Long.Parse(prod_percent.Text)
+            prodName:=String.Format(txt_prodName.Text),
+            prodPrice:=Double.Parse(txt_prodPrice.Text),
+            prodPercent:=Long.Parse(txt_prodPercent.Text)
             )
-        If Double.Parse(prod_percent.Text) > 0 Then
+        If Double.Parse(txt_prodPercent.Text) > 0 Then
             If count = 1 Then
-                prodTwo_name.Text = product(1).getName
-                prodTwo_price.Text = product(1).getPrice
-                prodTwo_percent.Text = product(1).getPercent
-                prodTwo_priceAD.Text = product(1).calcDiscount
+                txt_ptName.Text = product(1).getName
+                txt_ptPrice.Text = product(1).getPrice
+                txt_ptPercent.Text = product(1).getPercent
+                txt_ptPriceAD.Text = product(1).calcDiscount
             ElseIf count = 2 Then
-                prodThree_name.Text = product(2).getName
-                prodThree_price.Text = product(2).getPrice
-                prodThree_percent.Text = product(2).getPercent
-                prodThree_priceAD.Text = product(2).calcDiscount
+                txt_p3name.Text = product(2).getName
+                txt_p3price.Text = product(2).getPrice
+                txt_p3Percent.Text = product(2).getPercent
+                txt_p3PriceAD.Text = product(2).calcDiscount
             Else
-                prodOne_name.Text = product(0).getName
-                prodOne_price.Text = product(0).getPrice
-                prodOne_percent.Text = product(0).getPercent
-                prodOne_priceAD.Text = product(0).calcDiscount
+                txt_poName.Text = product(0).getName
+                txt_poPrice.Text = product(0).getPrice
+                txt_poPercent.Text = product(0).getPercent
+                txt_poPriceAD.Text = product(0).calcDiscount
             End If
         Else
             MessageBox.Show("Please enter valid percentage", "Percentage Error",
@@ -52,9 +45,9 @@ Public Class Form1
         End If
 
 
-        prod_name.Text = ""
-        prod_price.Text = ""
-        prod_percent.Text = ""
+        txt_prodName.Text = "Product Name"
+        txt_prodPrice.Text = "Product Price"
+        txt_prodPercent.Text = "Discount Percent"
 
         count += 1
         landingPage.Visible = True
@@ -74,26 +67,17 @@ Public Class Form1
         viewProduct.Visible = True
     End Sub
 
-
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles btn_goHome.Click
         landingPage.Visible = True
         addProduct.Visible = False
         viewProduct.Visible = False
     End Sub
-    Private Sub prod_name_GotFocus(sender As Object, e As EventArgs) Handles prod_name.GotFocus, prod_price.GotFocus, prod_percent.GotFocus
+    Private Sub prod_name_GotFocus(sender As Object, e As EventArgs) Handles txt_prodName.GotFocus
         sender.BackColor = Color.Gray
     End Sub
 
-    Private Sub prod_name_LostFocus(sender As Object, e As EventArgs) Handles prod_name.LostFocus, prod_price.LostFocus, prod_percent.LostFocus
+    Private Sub prod_name_LostFocus(sender As Object, e As EventArgs) Handles txt_prodName.LostFocus
         sender.BackColor = Color.White
-    End Sub
-
-    Private Sub prod_price_TextChanged(sender As Object, e As EventArgs) Handles prod_price.TextChanged
-
-    End Sub
-
-    Private Sub landingPage_Paint(sender As Object, e As PaintEventArgs) Handles landingPage.Paint
-
     End Sub
 
 End Class

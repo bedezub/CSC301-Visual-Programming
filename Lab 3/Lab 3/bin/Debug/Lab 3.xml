@@ -22,5 +22,20 @@ Lab 3
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Lab_3.My.Resources.Resources.checkout">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Lab_3.My.Resources.Resources.form">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Lab_3.My.Resources.Resources.Japan_Taste">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

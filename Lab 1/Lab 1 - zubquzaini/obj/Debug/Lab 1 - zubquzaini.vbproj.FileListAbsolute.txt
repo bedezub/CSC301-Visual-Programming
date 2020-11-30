@@ -10,3 +10,15 @@ C:\Users\zubquzaini\source\repos\Lab 1 - zubquzaini\Lab 1 - zubquzaini\obj\Debug
 C:\Users\zubquzaini\source\repos\Lab 1 - zubquzaini\Lab 1 - zubquzaini\obj\Debug\Lab 1 - zubquzaini.exe
 C:\Users\zubquzaini\source\repos\Lab 1 - zubquzaini\Lab 1 - zubquzaini\obj\Debug\Lab 1 - zubquzaini.xml
 C:\Users\zubquzaini\source\repos\Lab 1 - zubquzaini\Lab 1 - zubquzaini\obj\Debug\Lab 1 - zubquzaini.pdb
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Lab 1\Lab 1 - zubquzaini\bin\Debug\Lab 1 - zubquzaini.exe.config
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Lab 1\Lab 1 - zubquzaini\bin\Debug\Lab 1 - zubquzaini.exe
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Lab 1\Lab 1 - zubquzaini\bin\Debug\Lab 1 - zubquzaini.pdb
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Lab 1\Lab 1 - zubquzaini\bin\Debug\Lab 1 - zubquzaini.xml
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Lab 1\Lab 1 - zubquzaini\obj\Debug\Lab 1 - zubquzaini.vbprojAssemblyReference.cache
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Lab 1\Lab 1 - zubquzaini\obj\Debug\Lab_1___zubquzaini.Form1.resources
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Lab 1\Lab 1 - zubquzaini\obj\Debug\Lab_1___zubquzaini.Resources.resources
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Lab 1\Lab 1 - zubquzaini\obj\Debug\Lab 1 - zubquzaini.vbproj.GenerateResource.cache
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Lab 1\Lab 1 - zubquzaini\obj\Debug\Lab 1 - zubquzaini.vbproj.CoreCompileInputs.cache
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Lab 1\Lab 1 - zubquzaini\obj\Debug\Lab 1 - zubquzaini.exe
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Lab 1\Lab 1 - zubquzaini\obj\Debug\Lab 1 - zubquzaini.xml
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\Lab 1\Lab 1 - zubquzaini\obj\Debug\Lab 1 - zubquzaini.pdb

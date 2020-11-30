@@ -1,4 +1,4 @@
-﻿Imports System.IO
+﻿'Written by bedezub
 
 Public Class Form1
 
@@ -13,11 +13,11 @@ Public Class Form1
 
     Function OilLubeCharges()
         Dim price As Double
-        If oil_change.Checked AndAlso lube_job.Checked Then
+        If chkOilChange.Checked AndAlso chkLubeJob.Checked Then
             price = oil_change_service + lube_job_service
-        ElseIf oil_change.Checked Then
+        ElseIf chkOilChange.Checked Then
             price = oil_change_service
-        ElseIf lube_job.Checked Then
+        ElseIf chkLubeJob.Checked Then
             price = lube_job_service
         Else
             price = 0
@@ -27,11 +27,11 @@ Public Class Form1
 
     Function FlushCharges()
         Dim price As Double
-        If radiator.Checked AndAlso transmission.Checked Then
+        If chkRadiator.Checked AndAlso chkTransmission.Checked Then
             price = radiator_flush_service + transmission_flush_service
-        ElseIf radiator.Checked Then
+        ElseIf chkRadiator.Checked Then
             price = radiator_flush_service
-        ElseIf transmission.Checked Then
+        ElseIf chkTransmission.Checked Then
             price = transmission_flush_service
         Else
             price = 0
@@ -41,29 +41,29 @@ Public Class Form1
 
     Function MiscCharges()
         Dim price As Double
-        If inspection.Checked AndAlso muffler.Checked AndAlso tire_rotation.Checked Then
+        If chkInspection.Checked AndAlso chkMuffler.Checked AndAlso chkTireRotation.Checked Then
             price = inspection_service + muffler_replacement_service + tire_rotation_service
             Console.WriteLine("masuk 1")
         Else
-            If inspection.Checked AndAlso muffler.Checked AndAlso Not tire_rotation.Checked Then
+            If chkInspection.Checked AndAlso chkMuffler.Checked AndAlso Not chkTireRotation.Checked Then
                 price = inspection_service + muffler_replacement_service
                 Console.WriteLine("masuk 2")
-                Console.WriteLine(muffler.Checked)
-            ElseIf inspection.Checked And tire_rotation.Checked AndAlso Not muffler.Checked Then
+                Console.WriteLine(chkMuffler.Checked)
+            ElseIf chkInspection.Checked And chkTireRotation.Checked AndAlso Not chkMuffler.Checked Then
                 price = inspection_service + tire_rotation_service
-                Console.WriteLine(tire_rotation.Checked)
+                Console.WriteLine(chkTireRotation.Checked)
                 Console.WriteLine("masuk 3")
-            ElseIf muffler.Checked AndAlso tire_rotation.Checked AndAlso Not inspection.Checked Then
+            ElseIf chkMuffler.Checked AndAlso chkTireRotation.Checked AndAlso Not chkInspection.Checked Then
                 price = muffler_replacement_service + tire_rotation_service
                 Console.WriteLine("masuk 4")
             Else
-                If inspection.Checked Then
+                If chkInspection.Checked Then
                     price = inspection_service
                     Console.WriteLine("masuk 5")
-                ElseIf muffler.Checked Then
+                ElseIf chkMuffler.Checked Then
                     price = muffler_replacement_service
                     Console.WriteLine("masuk 6")
-                ElseIf tire_rotation.Checked Then
+                ElseIf chkTireRotation.Checked Then
                     price = tire_rotation_service
                     Console.WriteLine("masuk 7")
                 Else
@@ -76,14 +76,14 @@ Public Class Form1
     End Function
     Function OtherCharges()
         Dim price As Double
-        If labor.Text = Nothing AndAlso part.Text = Nothing Then
+        If txtLabor.Text = Nothing AndAlso txtPart.Text = Nothing Then
         Else
-            If labor.Text = Nothing Then
-                price = Double.Parse(part.Text)
-            ElseIf part.Text = Nothing Then
-                price = Double.Parse(labor.Text)
-            ElseIf Double.Parse(labor.Text) > 0 AndAlso Double.Parse(part.Text) > 0 Then
-                price = (Double.Parse(labor.Text) * 70) + Double.Parse(part.Text)
+            If txtLabor.Text = Nothing Then
+                price = Double.Parse(txtPart.Text)
+            ElseIf txtPart.Text = Nothing Then
+                price = Double.Parse(txtLabor.Text)
+            ElseIf Double.Parse(txtLabor.Text) > 0 AndAlso Double.Parse(txtPart.Text) > 0 Then
+                price = (Double.Parse(txtLabor.Text) * 70) + Double.Parse(txtPart.Text)
             Else
                 price = 0
                 MessageBox.Show("Invalid input", "Please enter correct value for parts and labor",
@@ -95,9 +95,9 @@ Public Class Form1
 
     Function TaxCharges()
         Dim price As Double
-        If part.Text = Nothing Then
+        If txtPart.Text = Nothing Then
         Else
-            price += (Double.Parse(part_price.Text) * 0.06)
+            price += (Double.Parse(txtPartPrice.Text) * 0.06)
         End If
         Return price
     End Function
@@ -108,40 +108,41 @@ Public Class Form1
     End Function
 
     Function ClearOilLube()
-        DirectCast(oil_change, CheckBox).Checked = False
-        DirectCast(lube_job, CheckBox).Checked = False
+        DirectCast(chkOilChange, CheckBox).Checked = False
+        DirectCast(chkLubeJob, CheckBox).Checked = False
     End Function
 
     Function ClearFlushes()
-        DirectCast(radiator, CheckBox).Checked = False
-        DirectCast(transmission, CheckBox).Checked = False
+        DirectCast(chkRadiator, CheckBox).Checked = False
+        DirectCast(chkTransmission, CheckBox).Checked = False
     End Function
 
     Function ClearMisc()
-        DirectCast(inspection, CheckBox).Checked = False
-        DirectCast(muffler, CheckBox).Checked = False
-        DirectCast(tire_rotation, CheckBox).Checked = False
+        DirectCast(chkInspection, CheckBox).Checked = False
+        DirectCast(chkMuffler, CheckBox).Checked = False
+        DirectCast(chkTireRotation, CheckBox).Checked = False
     End Function
 
     Function ClearOther()
-        part.Clear()
-        labor.Clear()
-        part_price.Clear()
-        tax_price.Clear()
+        txtPart.Clear()
+        txtLabor.Clear()
+        txtPartPrice.Clear()
+        txtTaxPrice.Clear()
+        txtServicePrice.Clear()
     End Function
 
     Function ClearFees()
-        total_fees.Clear()
+        txtTotalPrice.Clear()
     End Function
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        part_price.Text = part.Text
-        service_price.Text = labor.Text
-        tax_price.Text = TaxCharges()
-        total_fees.Text = TotalCharges()
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnCalcTotal.Click
+        txtPartPrice.Text = txtPart.Text
+        txtServicePrice.Text = txtLabor.Text
+        txtTaxPrice.Text = TaxCharges()
+        txtTotalPrice.Text = TotalCharges()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         ClearOilLube()
         ClearFlushes()
         ClearMisc()
@@ -158,27 +159,24 @@ Public Class Form1
     End Function
 
     Private Sub RedToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RedToolStripMenuItem.Click
-        part_price.BackColor() = Color.Red
-        service_price.BackColor() = Color.Red
-        total_fees.BackColor() = Color.Red
-        tax_price.BackColor() = Color.Red
+        txtPartPrice.BackColor() = Color.Red
+        txtServicePrice.BackColor() = Color.Red
+        txtTotalPrice.BackColor() = Color.Red
+        txtTaxPrice.BackColor() = Color.Red
     End Sub
 
     Private Sub BlueToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BlueToolStripMenuItem.Click
-        part_price.BackColor() = Color.Blue
-        service_price.BackColor() = Color.Blue
-        total_fees.BackColor() = Color.Blue
-        tax_price.BackColor() = Color.Blue
+        txtPartPrice.BackColor() = Color.Blue
+        txtServicePrice.BackColor() = Color.Blue
+        txtTotalPrice.BackColor() = Color.Blue
+        txtTaxPrice.BackColor() = Color.Blue
     End Sub
 
     Private Sub WhiteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles WhiteToolStripMenuItem.Click
-        part_price.BackColor() = Color.White
-        service_price.BackColor() = Color.White
-        total_fees.BackColor() = Color.White
-        tax_price.BackColor() = Color.White
+        txtPartPrice.BackColor() = Color.White
+        txtServicePrice.BackColor() = Color.White
+        txtTotalPrice.BackColor() = Color.White
+        txtTaxPrice.BackColor() = Color.White
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Close()
-    End Sub
 End Class

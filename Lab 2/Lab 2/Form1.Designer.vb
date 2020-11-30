@@ -41,9 +41,9 @@ Partial Class Form1
         'txtName
         '
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtName.Location = New System.Drawing.Point(306, 17)
+        Me.txtName.Location = New System.Drawing.Point(294, 12)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(145, 13)
+        Me.txtName.Size = New System.Drawing.Size(109, 13)
         Me.txtName.TabIndex = 1
         Me.txtName.Text = "Search"
         '
@@ -57,7 +57,6 @@ Partial Class Form1
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
