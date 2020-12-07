@@ -1,0 +1,17 @@
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\bin\Debug\IndividualProject.exe.config
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\bin\Debug\IndividualProject.exe
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\bin\Debug\IndividualProject.pdb
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\bin\Debug\IndividualProject.xml
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\obj\Debug\IndividualProject.vbprojAssemblyReference.cache
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\obj\Debug\IndividualProject.Form1.resources
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\obj\Debug\IndividualProject.Form2.resources
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\obj\Debug\IndividualProject.Form3.resources
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\obj\Debug\IndividualProject.Form4.resources
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\obj\Debug\IndividualProject.Resources.resources
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\obj\Debug\IndividualProject.vbproj.GenerateResource.cache
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\obj\Debug\IndividualProject.vbproj.CoreCompileInputs.cache
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\obj\Debug\IndividualProject.exe
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\obj\Debug\IndividualProject.xml
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\obj\Debug\IndividualProject.pdb
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\bin\Debug\QRCoder.dll
+C:\Users\zubquzaini\Documents\Sem 5\CSC301-Visual-Programming\IndividualProject\IndividualProject\obj\Debug\IndividualProject.vbproj.CopyComplete

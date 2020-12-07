@@ -41,9 +41,10 @@ Partial Class Form1
         'txtName
         '
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtName.Location = New System.Drawing.Point(294, 12)
+        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Location = New System.Drawing.Point(308, 12)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(109, 13)
+        Me.txtName.Size = New System.Drawing.Size(109, 19)
         Me.txtName.TabIndex = 1
         Me.txtName.Text = "Search"
         '
